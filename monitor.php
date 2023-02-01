@@ -27,63 +27,97 @@ else {
         display: flex;
         flex-wrap: wrap;
       }
-      .http-status li {
+      .http-status > li {
         padding: 5px;
-        width: 100px;
-        height: 100px;
-        margin: 10px;
-        line-height: 100px;
-        color: white;
-        font-weight: bold;
-        font-size: 2em;
-        text-align: center;
+        width: calc(50% - 12px);
+        min-width: 400px;
+        margin: 1px;
+        line-height: 1em;
+        color: #000000;
+        font-family: sans-serif;
+        font-size: 1em;
+        text-align: left;
+        word-wrap: break-word;
       }
+      .http-status span {
+        float: right;
+        border: 1px solid;
+        background-color: #0002;
+        border-radius: 3px;
+        padding: 0px 1px;
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+      }
+      .http-status a { color: #000000; }
       .status-non { background: #aaaaaa; }  
-      .status-def { background: #aa0000; }  
-      .status-200 { background: #00aa00; }  
-      .status-308 { background: #0000aa; }  
+      .status-def { background: #ff6e3a; }  
+      .status-200 { background: #00d302; }  
+      .status-308 { background: #00c2f9; }  
       .status-bad { background: #666666; }  
     </style>
 
     <script>
     ilio = {
       serverSide: true,
-      pingInterval: 6, // Seconds
+      pingInterval: 0, // Seconds
       urls: [
         'https://easyforms.illinoislegalaid.org/run/Appearance/appearance',
+        'https://easyforms.illinoislegalaid.org/run/Appearance/appearance/#/1',
         'https://easyforms.illinoislegalaid.org/run/AppearanceEfile/appearance',
+        'https://easyforms.illinoislegalaid.org/run/AppearanceEfile/appearance/#/1',
         'https://easyforms.illinoislegalaid.org/run/AskDebtCollectorStopContact/stop_debt_collection',
+        'https://easyforms.illinoislegalaid.org/run/AskDebtCollectorStopContact/stop_debt_collection/#/1',
         'https://easyforms.illinoislegalaid.org/run/CollectionProofLetter/collection_proof_debtor',
+        'https://easyforms.illinoislegalaid.org/run/CollectionProofLetter/collection_proof_debtor/#/1',
         'https://easyforms.illinoislegalaid.org/run/EFilingExemptionAppellateCourt/e-filing_exemption_appellate_court',
+        'https://easyforms.illinoislegalaid.org/run/EFilingExemptionAppellateCourt/e-filing_exemption_appellate_court/#/1',
         'https://easyforms.illinoislegalaid.org/run/EfilingExemptionCircuitCourt/e-filing_exemption',
+        'https://easyforms.illinoislegalaid.org/run/EfilingExemptionCircuitCourt/e-filing_exemption/#/1',
         'https://easyforms.illinoislegalaid.org/run/EFilingExemptionSupremeCourt/e-filing_exemption_supreme_court',
+        'https://easyforms.illinoislegalaid.org/run/EFilingExemptionSupremeCourt/e-filing_exemption_supreme_court/#/1',
         'https://easyforms.illinoislegalaid.org/run/EndLockout/end_lockout_letter',
+        'https://easyforms.illinoislegalaid.org/run/EndLockout/end_lockout_letter/#/1',
         'https://easyforms.illinoislegalaid.org/run/EvictATenant/evict_a_tenant',
+        'https://easyforms.illinoislegalaid.org/run/EvictATenant/evict_a_tenant/#/1',
         'https://easyforms.illinoislegalaid.org/run/FeeWaiver/fee_waiver',
+        'https://easyforms.illinoislegalaid.org/run/FeeWaiver/fee_waiver/#/1',
         'https://easyforms.illinoislegalaid.org/run/IDHRHousingDiscriminationComplaint/housing_discrimination_complaint',
+        'https://easyforms.illinoislegalaid.org/run/IDHRHousingDiscriminationComplaint/housing_discrimination_complaint/#/1',
         'https://easyforms.illinoislegalaid.org/run/LivingWill/living_will',
+        'https://easyforms.illinoislegalaid.org/run/LivingWill/living_will/#/1',
         'https://easyforms.illinoislegalaid.org/run/RequestTimeOffWorkDueToDomesticViolence/request_time_off_work_due_to_domestic_violence',
+        'https://easyforms.illinoislegalaid.org/run/RequestTimeOffWorkDueToDomesticViolence/request_time_off_work_due_to_domestic_violence/#/1',
         'https://easyforms.illinoislegalaid.org/run/RespondToALawsuit/respond_to_a_lawsuit',
+        'https://easyforms.illinoislegalaid.org/run/RespondToALawsuit/respond_to_a_lawsuit/#/1',
         'https://easyforms.illinoislegalaid.org/run/SecurityDepositDemand/security_deposit_demand_letter',
+        'https://easyforms.illinoislegalaid.org/run/SecurityDepositDemand/security_deposit_demand_letter/#/1',
         'https://easyforms.illinoislegalaid.org/run/StopWageAssignment/stop_wage_assignment',
+        'https://easyforms.illinoislegalaid.org/run/StopWageAssignment/stop_wage_assignment/#/1',
         'https://easyforms.illinoislegalaid.org/run/WhichProtectiveOrderIsRightForMe/which_protective_order',
+        'https://easyforms.illinoislegalaid.org/run/WhichProtectiveOrderIsRightForMe/which_protective_order/#/1',
       ],
-
+      init: () => {
+        var ul = document.getElementById("status-list");
+        ilio.urls.forEach(url => {
+          var li = document.createElement("li");
+          li.classList.add('status-non');
+          li.innerHTML = '<span>?</span><a href="'+url+'" target="_blank">'+url.replace('https://easyforms.illinoislegalaid.org/run/','')+'</a>';
+          li.setAttribute('title', url);
+          ul.appendChild(li);
+        });
+        ilio.pingUrls();
+        if(ilio.pingInterval) { setInterval(ilio.pingUrls, ilio.pingInterval * 1000); }
+      },
       returnStatus: (req, elem) => {
-        var status = ilio.serverSide ? (req.status == 200 ? req.responseText : 'bad') : req.status;
-        elem.innerHTML = status;
+        var status = ilio.serverSide ? ((req.status == 200 && req.responseText.length == 3) ? req.responseText : 'bad') : req.status;
+        elem.getElementsByTagName('span')[0].innerHTML = status;
         elem.removeAttribute('class');
         elem.classList.add('status-def', 'status-'+ status);
       },
       checkUrl: (url, elem) => {
         var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() { if(this.readyState == 4) ilio.returnStatus(this, elem); }
-        if(ilio.serverSide) {
-          xhr.open('GET', '?url='+url, true);
-        }
-        else {
-          xhr.open('HEAD', url, true);
-        }
+        xhr.onreadystatechange = function() { if(this.readyState == 4) { ilio.returnStatus(this, elem); }}
+        if(ilio.serverSide) { xhr.open('GET', '?url='+url, true); } else { xhr.open('HEAD', url, true); }
         xhr.send();
       },
       pingUrls: () => {
@@ -92,18 +126,7 @@ else {
       }
     }
 
-    window.addEventListener('load', function () {
-      var ul = document.getElementById("status-list");
-      ilio.urls.forEach(url => {
-        var li = document.createElement("li");
-        li.classList.add('status-non');
-        li.innerHTML = '?';
-        li.setAttribute('title', url);
-        ul.appendChild(li);
-      });
-      setInterval(ilio.pingUrls, ilio.pingInterval * 1000);
-    });
-
+    window.addEventListener('load', ilio.init);
     </script>
   </head>
   <body>
