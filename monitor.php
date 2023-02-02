@@ -129,8 +129,20 @@ else {
     window.addEventListener('load', ilio.init);
     </script>
   </head>
-  <body>
-    <div>
+  <body style="margin: 0;">
+    <div style="background-color: #181c36; height; position: relative; top: 0; right: 0; left: 0; z-index: 1030; color: #fff; font-size: 1.5rem; padding: 1rem 5rem; margin: 0 0 0.25rem 0;">
+
+    <svg width="73" height="30" style="float: left;" viewBox="0 0 73 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.801223">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M72.942 15.0535C72.942 6.79884 66.2314 0.107071 57.9535 0.107071C52.3797 0.107071 47.5265 3.14842 44.9442 7.65031L48.8681 15.3468C48.865 15.2488 48.8532 15.1525 48.8532 15.0535C48.8532 10.0743 52.9277 6.03743 57.9535 6.03743C62.9795 6.03743 67.054 10.0743 67.054 15.0535C67.054 20.0328 62.9795 24.0697 57.9535 24.0697C55.8273 24.0697 53.8762 23.3415 52.3271 22.1311L56.2897 29.9026C56.8364 29.963 57.3906 30 57.9535 30C66.2314 30 72.942 23.3082 72.942 15.0535" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 29.9999H5.38264V0.0431213H0V29.9999Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37.8847 0H36.125L23.8419 24.0511H15.6277V0.0428663H10.2389V29.9996H20.8041V29.9996H27.5419L36.8546 11.7688L46.2115 29.9996H53.1157L37.8847 0Z" fill="white"/>
+</g>
+</svg>
+
+    <span style="margin-left: 1rem;">Docassemble Easy Form Status</span>
+    </div>
+    <div style="margin: 0.25rem;">
       <ul id="status-list" class="http-status"></ul>
     </div>
   </body>
