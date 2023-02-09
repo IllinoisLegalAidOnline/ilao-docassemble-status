@@ -10,11 +10,11 @@ else {
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ILIO Status Monitor</title>
+    <title>ILAO Status Monitor</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Status Monitor for ILIO.">
+    <meta name="description" content="Status Monitor for ILAO.">
     <meta name="robots" content="noindex">
 
     <style>
@@ -130,7 +130,7 @@ else {
     </script>
   </head>
   <body style="margin: 0;">
-    <div style="background-color: #181c36; height; position: relative; top: 0; right: 0; left: 0; z-index: 1030; color: #fff; font-size: 1.5rem; padding: 1rem 5rem; margin: 0 0 0.25rem 0;">
+    <div style="background-color: #181c36; height; position: relative; top: 0; right: 0; left: 0; z-index: 1030; color: #fff; font-size: 1.5rem; padding: 1rem 4rem; margin: 0 0 0.25rem 0;">
 
     <svg width="73" height="30" style="float: left;" viewBox="0 0 73 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.801223">
