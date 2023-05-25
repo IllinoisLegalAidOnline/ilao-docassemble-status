@@ -93,6 +93,8 @@ else {
         'https://easyforms.illinoislegalaid.org/run/SecurityDepositDemand/security_deposit_demand_letter/#/1',
         'https://easyforms.illinoislegalaid.org/run/StopWageAssignment/stop_wage_assignment',
         'https://easyforms.illinoislegalaid.org/run/StopWageAssignment/stop_wage_assignment/#/1',
+        'https://easyforms.illinoislegalaid.org/run/VoluntaryAcknowledgementOfParentage/voluntary_acknowledgement_of_paternity',
+        'https://easyforms.illinoislegalaid.org/run/VoluntaryAcknowledgementOfParentage/voluntary_acknowledgement_of_paternity/#/1',
         'https://easyforms.illinoislegalaid.org/run/WhichProtectiveOrderIsRightForMe/which_protective_order',
         'https://easyforms.illinoislegalaid.org/run/WhichProtectiveOrderIsRightForMe/which_protective_order/#/1',
       ],
