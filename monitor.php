@@ -83,6 +83,8 @@ else {
         'https://easyforms.illinoislegalaid.org/run/FeeWaiver/fee_waiver/#/1',
         'https://easyforms.illinoislegalaid.org/run/IDHRHousingDiscriminationComplaint/housing_discrimination_complaint',
         'https://easyforms.illinoislegalaid.org/run/IDHRHousingDiscriminationComplaint/housing_discrimination_complaint/#/1',
+        'https://easyforms.illinoislegalaid.org/run/InterpreterRequest/interpreter_request',
+        'https://easyforms.illinoislegalaid.org/run/InterpreterRequest/interpreter_request/#/1',
         'https://easyforms.illinoislegalaid.org/run/LivingWill/living_will',
         'https://easyforms.illinoislegalaid.org/run/LivingWill/living_will/#/1',
         'https://easyforms.illinoislegalaid.org/run/Motion/motion',
