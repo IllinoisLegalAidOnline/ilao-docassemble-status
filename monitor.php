@@ -89,6 +89,8 @@ else {
         'https://easyforms.illinoislegalaid.org/run/LivingWill/living_will/#/1',
         'https://easyforms.illinoislegalaid.org/run/Motion/motion',
         'https://easyforms.illinoislegalaid.org/run/Motion/motion/#/1',
+        'https://easyforms.illinoislegalaid.org/run/PowerOfAttorneyProperty/power_of_attorney_for_property',
+        'https://easyforms.illinoislegalaid.org/run/PowerOfAttorneyProperty/power_of_attorney_for_property/#/1',
         'https://easyforms.illinoislegalaid.org/run/PowerOfAttorneyResignation/power_of_attorney_resignation',
         'https://easyforms.illinoislegalaid.org/run/PowerOfAttorneyResignation/power_of_attorney_resignation/#/1',
         'https://easyforms.illinoislegalaid.org/run/PowerOfAttorneyRevocation/power_of_attorney_revocation',
