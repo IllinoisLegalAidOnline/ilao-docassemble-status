@@ -60,6 +60,8 @@ else {
     ilio = {
       serverSide: true,
       pingInterval: 0, // Seconds
+      pingDelay: 500, // Milliseconds
+      maxActive: 3,
       urls: [
         'https://easyforms.illinoislegalaid.org/run/Appearance/appearance',
         'https://easyforms.illinoislegalaid.org/run/Appearance/appearance/#/1',
@@ -131,8 +133,11 @@ else {
         elem.getElementsByTagName('span')[0].innerHTML = status;
         elem.removeAttribute('class');
         elem.classList.add('status-def', 'status-'+ status);
+        ilio.maxActive++;
       },
-      checkUrl: (url, elem) => {
+      checkUrl: async (url, elem) => {
+        while(ilio.maxActive <= 0) { await ilio.sleep(ilio.pingDelay); }
+        ilio.maxActive--;
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() { if(this.readyState == 4) { ilio.returnStatus(this, elem); }}
         if(ilio.serverSide) { xhr.open('GET', '?url='+url, true); } else { xhr.open('HEAD', url, true); }
@@ -140,8 +145,9 @@ else {
       },
       pingUrls: () => {
         var elems = document.getElementById("status-list").children;
-        ilio.urls.forEach((url, index) => { ilio.checkUrl(url, elems[index]); });
-      }
+        ilio.urls.forEach(async (url, i) => { await ilio.sleep(ilio.pingDelay * i); ilio.checkUrl(url, elems[i]); });
+      },
+      sleep: (ms) => { return new Promise(r => setTimeout(r, ms)); }
     }
 
     window.addEventListener('load', ilio.init);
