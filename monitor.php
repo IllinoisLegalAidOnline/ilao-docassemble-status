@@ -91,6 +91,8 @@ else {
         'https://easyforms.illinoislegalaid.org/run/LivingWill/living_will/#/1',
         'https://easyforms.illinoislegalaid.org/run/Motion/motion',
         'https://easyforms.illinoislegalaid.org/run/Motion/motion/#/1',
+        'https://easyforms.illinoislegalaid.org/run/OrderOfProtection/order_of_protection',
+        'https://easyforms.illinoislegalaid.org/run/OrderOfProtection/order_of_protection/#/1',
         'https://easyforms.illinoislegalaid.org/run/PersonnelFileRequest/personnel_file_request',
         'https://easyforms.illinoislegalaid.org/run/PersonnelFileRequest/personnel_file_request/#/1',
         'https://easyforms.illinoislegalaid.org/run/PowerOfAttorneyHealthCare/power_of_attorney_for_health_care',
