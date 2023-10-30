@@ -132,7 +132,7 @@ else {
       },
       returnStatus: (req, elem) => {
         var status = ilio.serverSide ? ((req.status == 200 && req.responseText.length == 3) ? req.responseText : 'bad') : req.status;
-        elem.getElementsByTagName('span')[0].innerHTML = status;
+        elem.getElementsByTagName('span')[0].innerHTML = req.responseText;
         elem.removeAttribute('class');
         elem.classList.add('status-def', 'status-'+ status);
         ilio.maxActive++;
