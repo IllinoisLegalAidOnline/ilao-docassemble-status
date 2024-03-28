@@ -83,6 +83,8 @@ else {
         'https://easyforms.illinoislegalaid.org/start/EndLockout/end_lockout_letter/#/1',
         'https://easyforms.illinoislegalaid.org/start/EvictATenant/evict_a_tenant',
         'https://easyforms.illinoislegalaid.org/start/EvictATenant/evict_a_tenant/#/1',
+        'https://easyforms.illinoislegalaid.org/start/ExtendTimeOfEviction/extend_time_of_eviction',
+        'https://easyforms.illinoislegalaid.org/start/ExtendTimeOfEviction/extend_time_of_eviction/#/1',
         'https://easyforms.illinoislegalaid.org/start/FeeWaiver/fee_waiver',
         'https://easyforms.illinoislegalaid.org/start/FeeWaiver/fee_waiver/#/1',
         'https://easyforms.illinoislegalaid.org/start/IDHRHousingDiscriminationComplaint/housing_discrimination_complaint',
