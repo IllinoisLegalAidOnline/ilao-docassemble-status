@@ -111,6 +111,8 @@ else {
         'https://easyforms.illinoislegalaid.org/start/PowerOfAttorneyResignation/power_of_attorney_resignation/#/1',
         'https://easyforms.illinoislegalaid.org/start/PowerOfAttorneyRevocation/power_of_attorney_revocation',
         'https://easyforms.illinoislegalaid.org/start/PowerOfAttorneyRevocation/power_of_attorney_revocation/#/1',
+        'https://easyforms.illinoislegalaid.org/start/ProofOfDelivery/proof_of_delivery',
+        'https://easyforms.illinoislegalaid.org/start/ProofOfDelivery/proof_of_delivery/#/1',
         'https://easyforms.illinoislegalaid.org/start/RequestTimeOffWorkDueToDomesticViolence/request_time_off_work_due_to_domestic_violence',
         'https://easyforms.illinoislegalaid.org/start/RequestTimeOffWorkDueToDomesticViolence/request_time_off_work_due_to_domestic_violence/#/1',
         'https://easyforms.illinoislegalaid.org/start/RespondToALawsuit/respond_to_a_lawsuit',
