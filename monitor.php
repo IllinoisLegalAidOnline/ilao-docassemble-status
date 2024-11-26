@@ -3,7 +3,7 @@ if(isset($_GET['url'])) {
 	header('Content-type: application/json');
 	header("Content-Security-Policy: default-src 'self'");
 	//print_r('{"status":"'.substr(get_headers($_GET['url'])[0], 9, 3).'"}');
-	print_r(substr(get_headers($_GET['url'])[0], 9, 3));
+	print_r(substr(get_headers($_GET['url'])[0]??"", 9, 3));
 }
 else {
 ?>
