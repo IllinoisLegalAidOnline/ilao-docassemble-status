@@ -93,6 +93,7 @@ else {
         'https://easyforms.illinoislegalaid.org/start/NameChangeAdult/name_change_adult',
         'https://easyforms.illinoislegalaid.org/start/NameChangeChild/name_change_child',
         'https://easyforms.illinoislegalaid.org/start/OrderOfProtection/order_of_protection',
+        'https://easyforms.illinoislegalaid.org/start/ParentingPlan/parenting_plan',
         'https://easyforms.illinoislegalaid.org/start/PersonnelFileRequest/personnel_file_request',
         'https://easyforms.illinoislegalaid.org/start/PowerOfAttorneyHealthCare/power_of_attorney_for_health_care',
         'https://easyforms.illinoislegalaid.org/start/PowerOfAttorneyProperty/power_of_attorney_for_property',
