@@ -71,10 +71,9 @@ else {
       urls: [
         'https://easyforms.illinoislegalaid.org/start/Appearance/appearance',
         'https://easyforms.illinoislegalaid.org/start/AppearanceEfile/appearance',
-        'https://easyforms.illinoislegalaid.org/start/AskDebtCollectorStopContact/stop_debt_collection',
         'https://easyforms.illinoislegalaid.org/start/CannabisExpungement/cannabis_expungement',
-        'https://easyforms.illinoislegalaid.org/start/CollectionProofLetter/collection_proof_debtor',
         'https://easyforms.illinoislegalaid.org/start/CriminalCourtFeeWaiver/criminal_court_fee_waiver',
+        'https://easyforms.illinoislegalaid.org/start/DebtCollectorLetter/debt_collector_letter',
         'https://easyforms.illinoislegalaid.org/start/Divorce/divorce',
         'https://easyforms.illinoislegalaid.org/start/EFilingExemptionAppellateCourt/e-filing_exemption_appellate_court',
         'https://easyforms.illinoislegalaid.org/start/EfilingExemptionCircuitCourt/e-filing_exemption',
