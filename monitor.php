@@ -75,6 +75,7 @@ else {
         'https://easyforms.illinoislegalaid.org/start/CivilNoContactOrderRequest/civil_no_contact_order_request',
         'https://easyforms.illinoislegalaid.org/start/CriminalCourtFeeWaiver/criminal_court_fee_waiver',
         'https://easyforms.illinoislegalaid.org/start/DebtCollectorLetter/debt_collector_letter',
+        'https://easyforms.illinoislegalaid.org/start/DelayAForeclosureSale/delay_a_foreclosure_sale',
         'https://easyforms.illinoislegalaid.org/start/Divorce/divorce',
         'https://easyforms.illinoislegalaid.org/start/EFilingExemptionAppellateCourt/e-filing_exemption_appellate_court',
         'https://easyforms.illinoislegalaid.org/start/EfilingExemptionCircuitCourt/e-filing_exemption',
