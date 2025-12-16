@@ -82,6 +82,7 @@ else {
         'https://easyforms.illinoislegalaid.org/start/EFilingExemptionAppellateCourt/e-filing_exemption_appellate_court',
         'https://easyforms.illinoislegalaid.org/start/EFilingExemptionSupremeCourt/efiling_exemption_supreme_court',
         'https://easyforms.illinoislegalaid.org/start/EfilingExemptionCircuitCourt/e-filing_exemption',
+        'https://easyforms.illinoislegalaid.org/start/EmergencyMotionClaimExemption/emergency_motion_claim_exemption', 
         'https://easyforms.illinoislegalaid.org/start/EmergencyOrderOfProtectionCookCounty/order_of_protection',
         'https://easyforms.illinoislegalaid.org/start/EndLockout/end_lockout_letter',
         'https://easyforms.illinoislegalaid.org/start/EvictATenant/evict_a_tenant',
