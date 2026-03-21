@@ -120,7 +120,7 @@ else {
         'https://easyforms.illinoislegalaid.org/start/USCISApplications/main',
         'https://easyforms.illinoislegalaid.org/start/VacateDefaultForeclosure/vacate_default_foreclosure', 
         'https://easyforms.illinoislegalaid.org/start/VacateDefaultJudgment/motion_to_vacate',
-        'https://easyforms.illinoislegalaid.org/start/VoluntaryAcknowledgementOfParentage/voluntary_acknowledgement_of_paternity',
+        'https://easyforms.illinoislegalaid.org/start/VoluntaryAcknowledgementOfParentage/voluntary_acknowledgement_of_parentage',
         'https://easyforms.illinoislegalaid.org/start/WhichProtectiveOrderIsRightForMe/which_protective_order',
       ],
       init: () => {
