@@ -109,6 +109,7 @@ else {
         'https://easyforms.illinoislegalaid.org/start/ProofOfDelivery/proof_of_delivery',
         'https://easyforms.illinoislegalaid.org/start/RemoveEvictionFromPublicRecord/remove_eviction_from_record',
         'https://easyforms.illinoislegalaid.org/start/RequestTimeOffWorkDueToDomesticViolence/request_time_off_work_due_to_domestic_violence',
+        'https://easyforms.illinoislegalaid.org/start/RentalRepairLetter/rental_repair_letter',
         'https://easyforms.illinoislegalaid.org/start/RespondToALawsuit/respond_to_a_lawsuit',
         'https://easyforms.illinoislegalaid.org/start/RespondToAnEviction/respond_to_an_eviction',
         'https://easyforms.illinoislegalaid.org/start/RespondToForeclosureComplaint/respond_to_foreclosure',
