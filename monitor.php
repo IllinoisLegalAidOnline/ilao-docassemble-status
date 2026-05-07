@@ -119,6 +119,7 @@ else {
         'https://easyforms.illinoislegalaid.org/start/StalkingNoContactOrderRequest/stalking_no_contact_order_request',
         'https://easyforms.illinoislegalaid.org/start/StopWageAssignment/stop_wage_assignment',
         'https://easyforms.illinoislegalaid.org/start/TODI/transfer_on_death_instrument',
+        'https://easyforms.illinoislegalaid.org/start/UIAppealAfterHearing/ui_hearing_appeal',
         'https://easyforms.illinoislegalaid.org/start/UIHearingRequest/ui_hearing_request',
         'https://easyforms.illinoislegalaid.org/start/USCISApplications/main',
         'https://easyforms.illinoislegalaid.org/start/VacateDefaultForeclosure/vacate_default_foreclosure', 
