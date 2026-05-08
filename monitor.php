@@ -89,6 +89,7 @@ else {
         'https://easyforms.illinoislegalaid.org/start/EvictATenant/evict_a_tenant',
         'https://easyforms.illinoislegalaid.org/start/ExtendTimeOfEviction/extend_time_of_eviction',
         'https://easyforms.illinoislegalaid.org/start/FeeWaiver/fee_waiver',
+        'https://easyforms.illinoislegalaid.org/start/FeeWaiverAppellate/appellate_fee_waiver',
         'https://easyforms.illinoislegalaid.org/start/FinancialAffidavit/financial_affidavit',
         'https://easyforms.illinoislegalaid.org/start/GuardianshipMinor/guardianship_minor',
         'https://easyforms.illinoislegalaid.org/start/IDHRHousingDiscriminationComplaint/housing_discrimination_complaint',
